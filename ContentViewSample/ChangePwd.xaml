@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cnt="clr-namespace:ContentViewSample;assembly:ContentViewSample"
+             x:Class="ContentViewSample.ChangePwd">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <cnt:ContentViews UserName="username" Password="Pwd"  Grid.Row="0" />
+        <!--<cnt:ContentViews Password="Pwd" Grid.Row="0" />-->
+        <Button Text="Change Password" Grid.Row="1" x:Name="btnchangePwd" />
+    </Grid>
+</ContentPage>
